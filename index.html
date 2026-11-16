@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulateur cumul emploi-retraite 2027 : calculez la réduction de votre pension</title>
+<meta name="description" content="Simulateur gratuit du cumul emploi-retraite 2027 : seuil de 7 000 €, réduction de 50 %, règles avant l'âge légal et après 67 ans. Calcul immédiat, sans inscription.">
+<link rel="canonical" href="https://u-tawa.github.io/cumul-emploi-retraite/">
+<meta property="og:title" content="Simulateur cumul emploi-retraite 2027 : calculez la réduction de votre pension">
+<meta property="og:description" content="Simulateur gratuit du cumul emploi-retraite 2027 : seuil de 7 000 €, réduction de 50 %, règles avant l'âge légal et après 67 ans. Calcul immédiat, sans inscription.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://u-tawa.github.io/cumul-emploi-retraite/">
+<meta property="og:locale" content="fr_FR">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Qui est concerné par les nouvelles règles ?", "acceptedAnswer": {"@type": "Answer", "text": "Les personnes dont la première retraite de base prend effet à partir du 1er janvier 2027. Une retraite qui a pris effet au plus tard le 1er décembre 2026 reste soumise aux anciennes règles, même en cas de reprise d'activité ultérieure."}}, {"@type": "Question", "name": "Quel est le plafond du cumul emploi-retraite en 2027 ?", "acceptedAnswer": {"@type": "Answer", "text": "Entre l'âge légal et 67 ans, les revenus d'activité et de remplacement sont libres jusqu'à 7 000 € bruts par année civile. Au-delà, la retraite est réduite de la moitié du dépassement. Ce seuil est revalorisé chaque 1er janvier."}}, {"@type": "Question", "name": "Que se passe-t-il si je reprends un travail avant l'âge légal ?", "acceptedAnswer": {"@type": "Answer", "text": "La retraite est réduite du montant intégral des revenus perçus, dès le premier euro. C'est le cas notamment après un départ anticipé pour carrière longue."}}, {"@type": "Question", "name": "Et après 67 ans ?", "acceptedAnswer": {"@type": "Answer", "text": "Le cumul est libre, sans plafond de revenus, et les cotisations versées permettent d'acquérir de nouveaux droits à retraite."}}, {"@type": "Question", "name": "Comment la réduction est-elle prélevée ?", "acceptedAnswer": {"@type": "Answer", "text": "Elle est calculée sur les revenus de l'année civile puis retenue sur les versements suivants, par fractions égales sur douze mois, sans pouvoir amputer chaque versement de plus d'un tiers. Elle s'impute d'abord sur les retraites de base, puis sur les complémentaires."}}, {"@type": "Question", "name": "Existe-t-il un simulateur officiel ?", "acceptedAnswer": {"@type": "Answer", "text": "L'Assurance retraite a annoncé un simulateur pour le premier trimestre 2027. En attendant, l'outil de cette page applique les règles publiées au Journal officiel du 3 novembre 2026."}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Simulateur cumul emploi-retraite 2027", "url": "https://u-tawa.github.io/cumul-emploi-retraite/", "applicationCategory": "FinanceApplication", "operatingSystem": "Tous", "inLanguage": "fr", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "dateModified": "2026-11-16"}</script>
+</head>
+<body>
+<div class="notice">Site indépendant d'information, sans lien avec l'Assurance retraite ni avec l'administration.</div>
+<header class="site"><div class="wrap">
+<a class="brand" href="index.html">Cumul emploi-retraite <span>2027</span></a>
+<nav class="main" aria-label="Navigation principale"><a href="index.html" aria-current="page">Simulateur</a><a href="plafond-7000-euros.html">Seuil de 7 000 €</a><a href="micro-entrepreneur.html">Micro-entrepreneur</a><a href="avant-age-legal.html">Avant l'âge légal</a><a href="age-legal-67-ans.html">Âge légal et 67 ans</a><a href="qui-est-concerne.html">Qui est concerné</a><a href="methode-sources.html">Méthode et sources</a></nav>
+</div></header>
+<main class="wrap">
+
+<h1>Simulateur cumul emploi-retraite 2027</h1>
+<p class="lead">Vous prenez votre retraite à partir du 1<sup>er</sup> janvier 2027 et vous comptez continuer à travailler ? Calculez en une minute de combien votre pension sera réduite, selon les règles fixées par les décrets du 2 novembre 2026.</p>
+
+<form id="sim" class="card" novalidate>
+<fieldset>
+<legend>1. Quand votre première retraite de base prend-elle effet ?</legend>
+<div class="choices">
+<label><input type="radio" name="effet" value="apres" checked> <span>À partir du 1<sup>er</sup> janvier 2027</span></label>
+<label><input type="radio" name="effet" value="avant"> <span>Au plus tard le 1<sup>er</sup> décembre 2026</span></label>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>2. Votre date de naissance</legend>
+<p class="hint">Elle sert uniquement à afficher votre âge légal et la date de vos 67 ans.</p>
+<div class="row">
+<div><label class="small" for="nm">Mois</label><select id="nm"><option value="">—</option><option value="1">Janvier</option><option value="2">Février</option><option value="3">Mars</option><option value="4">Avril</option><option value="5">Mai</option><option value="6">Juin</option><option value="7">Juillet</option><option value="8">Août</option><option value="9">Septembre</option><option value="10">Octobre</option><option value="11">Novembre</option><option value="12">Décembre</option></select></div>
+<div><label class="small" for="ny">Année</label><input id="ny" type="number" inputmode="numeric" min="1945" max="1985" placeholder="ex. 1964"></div>
+</div>
+<p class="hint" id="ageinfo" aria-live="polite"></p>
+</fieldset>
+
+<fieldset>
+<legend>3. Votre situation pendant l'année simulée</legend>
+<div class="choices">
+<label><input type="radio" name="tranche" value="A"> <span>Je n'ai pas encore atteint mon âge légal <span class="small">(départ anticipé, carrière longue…)</span></span></label>
+<label><input type="radio" name="tranche" value="B" checked> <span>J'ai atteint mon âge légal mais pas encore 67 ans</span></label>
+<label><input type="radio" name="tranche" value="C"> <span>J'ai 67 ans ou plus</span></label>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>4. L'activité que vous reprenez ou poursuivez</legend>
+<div class="choices">
+<label><input type="radio" name="statut" value="salarie" checked> <span>Salarié</span></label>
+<label><input type="radio" name="statut" value="micro"> <span>Micro-entrepreneur (auto-entrepreneur)</span></label>
+<label><input type="radio" name="statut" value="indep"> <span>Indépendant hors micro</span></label>
+</div>
+</fieldset>
+
+<fieldset>
+<label class="q" for="rev" id="lab-rev">Salaire brut annuel prévu (€)</label>
+<p class="hint" id="hint-rev">Le brut soumis à CSG, sur l'année civile.</p>
+<input id="rev" type="number" inputmode="decimal" min="0" step="100" placeholder="ex. 12000">
+<div id="bloc-micro" hidden>
+<p class="hint" style="margin-top:14px">Le décret retient le chiffre d'affaires. Certaines analyses y appliquent l'abattement forfaitaire ; vous pouvez tester cette hypothèse.</p>
+<div class="row">
+<div><label class="small" for="activite">Nature de l'activité</label>
+<select id="activite"><option value="bnc">Profession libérale (BNC)</option><option value="bic">Prestation de services (BIC)</option><option value="vente">Vente de marchandises</option></select></div>
+</div>
+<p><label><input type="checkbox" id="abatt"> Calculer après abattement forfaitaire (hypothèse non confirmée)</label></p>
+</div>
+</fieldset>
+
+<fieldset>
+<label class="q" for="ij">Revenus de remplacement sur l'année (€) <span class="small">— facultatif</span></label>
+<p class="hint">Indemnités journalières de maladie, par exemple. Ils s'ajoutent aux revenus d'activité.</p>
+<input id="ij" type="number" inputmode="decimal" min="0" step="100" placeholder="0">
+</fieldset>
+
+<fieldset>
+<label class="q" for="pension">Total de vos retraites brutes par mois (€)</label>
+<p class="hint">Base et complémentaire additionnées.</p>
+<input id="pension" type="number" inputmode="decimal" min="0" step="50" placeholder="ex. 1600">
+</fieldset>
+
+<p><label><input type="checkbox" id="derog"> Mon activité fait partie des activités dérogatoires <a href="qui-est-concerne.html#derogations">(voir la liste)</a></label></p>
+<button class="go" type="submit">Calculer la réduction</button>
+</form>
+
+<section id="result" class="card" hidden aria-live="polite"></section>
+
+<h2>Les trois règles à connaître</h2>
+<div class="steps">
+<div><span class="n">Avant l'âge légal</span><b>Tout est déduit</b>Chaque euro de revenu repris est retiré de la retraite, dès le premier euro.</div>
+<div><span class="n">De l'âge légal à 67 ans</span><b>7 000 € libres, puis 50 %</b>Au-delà de 7 000 € bruts par an, la retraite baisse de la moitié du dépassement.</div>
+<div><span class="n">À partir de 67 ans</span><b>Cumul libre</b>Aucun plafond, et les cotisations créent de nouveaux droits.</div>
+</div>
+<p>Jusqu'en 2026, le cumul dépendait surtout de la carrière : taux plein ou non. Pour les retraites qui démarrent en 2027, seul l'âge compte. Un salarié de 64 ans parti à taux plein, qui pouvait auparavant cumuler sans limite, voit désormais sa pension rabotée dès que son activité dépasse le seuil.</p>
+
+<h2>Trois exemples chiffrés</h2>
+<div class="tablewrap"><table class="data"><thead><tr><th scope="col">Situation</th><th scope="col">Revenus pris en compte</th><th scope="col">Réduction annuelle</th><th scope="col">Gain réel</th></tr></thead><tbody><tr><td>Salarié de 64 ans, 6 000 € bruts par an</td><td>6 000 €</td><td>0 €</td><td>6 000 €</td></tr><tr><td>Salariée de 65 ans, 15 000 € bruts par an</td><td>15 000 €</td><td>4 000 €</td><td>11 000 €</td></tr><tr><td>Micro-entrepreneur de 65 ans, 30 000 € de chiffre d'affaires</td><td>30 000 €</td><td>11 500 €</td><td>18 500 €</td></tr></tbody></table></div>
+<p class="small">Gain réel : revenus diminués de la réduction de retraite, avant cotisations sociales et impôt. La réduction ne peut pas dépasser le montant des retraites de l'année.</p>
+
+<h2>Questions fréquentes</h2>
+<details><summary>Qui est concerné par les nouvelles règles ?</summary><p>Les personnes dont la première retraite de base prend effet à partir du 1er janvier 2027. Une retraite qui a pris effet au plus tard le 1er décembre 2026 reste soumise aux anciennes règles, même en cas de reprise d'activité ultérieure.</p></details><details><summary>Quel est le plafond du cumul emploi-retraite en 2027 ?</summary><p>Entre l'âge légal et 67 ans, les revenus d'activité et de remplacement sont libres jusqu'à 7 000 € bruts par année civile. Au-delà, la retraite est réduite de la moitié du dépassement. Ce seuil est revalorisé chaque 1er janvier.</p></details><details><summary>Que se passe-t-il si je reprends un travail avant l'âge légal ?</summary><p>La retraite est réduite du montant intégral des revenus perçus, dès le premier euro. C'est le cas notamment après un départ anticipé pour carrière longue.</p></details><details><summary>Et après 67 ans ?</summary><p>Le cumul est libre, sans plafond de revenus, et les cotisations versées permettent d'acquérir de nouveaux droits à retraite.</p></details><details><summary>Comment la réduction est-elle prélevée ?</summary><p>Elle est calculée sur les revenus de l'année civile puis retenue sur les versements suivants, par fractions égales sur douze mois, sans pouvoir amputer chaque versement de plus d'un tiers. Elle s'impute d'abord sur les retraites de base, puis sur les complémentaires.</p></details><details><summary>Existe-t-il un simulateur officiel ?</summary><p>L'Assurance retraite a annoncé un simulateur pour le premier trimestre 2027. En attendant, l'outil de cette page applique les règles publiées au Journal officiel du 3 novembre 2026.</p></details>
+
+<h2>Pour aller plus loin</h2>
+<ul>
+<li><a href="plafond-7000-euros.html">Le seuil de 7 000 € : barème complet et revenus qui comptent</a></li>
+<li><a href="micro-entrepreneur.html">Micro-entrepreneur à la retraite : pourquoi le chiffre d'affaires change tout</a></li>
+<li><a href="avant-age-legal.html">Carrière longue et départ anticipé : retravailler avant l'âge légal</a></li>
+<li><a href="age-legal-67-ans.html">Votre âge légal selon votre année de naissance, et ce qui change à 67 ans</a></li>
+<li><a href="qui-est-concerne.html">Date d'effet, anciennes règles, activités dérogatoires</a></li>
+</ul>
+
+</main>
+<footer class="site"><div class="wrap">
+<p>Dernière mise à jour : 16 novembre 2026. Les montants affichés sont des estimations indicatives et ne remplacent pas le calcul de votre caisse de retraite.</p>
+<p><a href="methode-sources.html">Méthode, sources et mentions</a> · Aucun cookie, aucun traceur : les calculs se font dans votre navigateur.</p>
+</div></footer>
+<script src="app.js" defer></script>
+</body>
+</html>

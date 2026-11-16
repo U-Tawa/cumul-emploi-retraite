@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://u-tawa.github.io/cumul-emploi-retraite/sitemap.xml
